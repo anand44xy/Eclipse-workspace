@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Parameter & Attributes</title>
+</head>
+<body>
+    <h1>Calculator</h1><br>
+    <form action="servlet1" method="post"> <!-- Correct form action -->
+        <label>Enter First No. </label><input type="text" name="fn"><br><br>
+        <label>Enter Second No. </label><input type="text" name="sn"><br><br>
+        <button type="submit">Go to servlet1 for sum</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;08-HiddenForm-App&apos; to &apos;08-HiddenFormField-App&apos;" description="Rename resource &apos;08-HiddenForm-App&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/08-HiddenForm-App" name="08-HiddenFormField-App" stamp="1696852543801" updateReferences="true"/>
+</session>

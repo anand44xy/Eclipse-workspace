@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Set a background color while the image is loading */
+        body {
+            background-color: #f0f0f0; /* Use a light gray background color */
+            background-image: url("https://picsum.photos/1200/800");
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Customize the registration button */
+        .btn-primary {
+            background-color: #007BFF;
+            border: none;
+            padding: 10px 20px; /* Add padding to the button */
+            color: #fff; /* Text color */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-control:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Header and Footer Styling */
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: #0055a4; /* Change the footer color to a different shade of blue */
+            color: #fff;
+            text-align: center;
+            padding: 5px 0; /* Decrease the height of the footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Registration Form</h1>
+    </header>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center">
+                            <!--<img src="path/to/your-logo.png" alt="Logo" class="img-fluid">-->
+                            Registration Form
+                        </h1>
+                        
+                        <form method="post" action="register">
+                            <div class="mb-3">
+                                <label for="userName" class="form-label">Enter Name</label>
+                                <input type="text" id="userName" name="userName" class="form-control" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Enter Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Enter Password</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="course" class="form-label">Course</label>
+                                <select id="course" name="course" class="form-select">
+                                    <option value="Btech">Btech</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="MCA">MCA</option>
+                                </select>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Anand. All rights reserved.</p>
+    </footer>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
